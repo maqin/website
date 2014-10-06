@@ -1,173 +1,157 @@
-
-
 <!doctype html>
-
 <meta charset="utf-8">
-
 <html lang="en" ng-app>
-
     <head>
-
      <!-- CSS
-
     ================================================== -->     
-
         <link href="./css/style.css" rel="stylesheet">
-
         <link href="./css/nav.css" rel="stylesheet">
-
-        <link href="bootstrap.min.css" rel="stylesheet">
-
+        <link href="./css/slides.css" rel="stylesheet">
+        <link href="./css/project.css" rel="stylesheet">
+        <link href="./css/contact.css" rel="stylesheet">
+        <link href="bootstrap.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
+        <link rel="shortcut icon" href="./images/myicon.ico">
         
-
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="./JS/app.js"></script>
     </head>
-
     
-
 <body>  
-
     <div class="navbar navbar-fixed-top">  
-
           <div class="navbar-inner">             
-
                       <div class="icons"> 
-
                             <ul id="horizontal-list">
-
-                            <li><a href="http://facebook.com/"><i class="fa fa-facebook"></i></a></li>
-
-                            <li><a href="http://linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
-
-                            <li><a href="http://twitter.com/"><i class="fa fa-twitter"></i></a></li>
-
+                            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/profile/view?id=202243189&trk=spm_pic"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/maqin"><i class="fa fa-github"></i></a></li>
                             <li><a href="http://plus.google.com/"><i class="fa fa-google-plus"></i> </a></li>
-
                             </ul>
-
                        </div>        
-
           </div>
-
      </div>
-
-
-<div id="content">                       
-
-        <div class="jumbotron">
-
-            <div class="wrapper">
-
-            <img src="./images/personal.jpg" style="width:124px; height:166px" class="img-circle"></div>
-
-            
-
-                <p>QINGFEI MA</p>
-
- 
-
-        </div>
-
-<div class="row">
-
-<div class="col-md-5">
-
-<p>Personal Introduction<p>
-
-</div>
-
-<div class="col-md-7">
-
-<div class="slider">
-
-    <p><img src="./images/bull.JPG" style="width:700px; height:450px"></p>
-
-    <p><img src="./images/pool.JPG" style="width:700px; height:450px"></p>
-
-    <p><img src="./images/newyork.JPG" style="width:700px; height:450px"></p>
-
-</div>
-
-</div>
-
-    </div>
-
-        <div class="row">
-
-            <div class="col-md-4">
-
-                <div class="shadow">
-
-                      <div class="front face">
-
-                <a href="#" class="thumbnail"><img src="http://www.myriadim.com/images/database-design.png"></a></div>
-
-                 <div class="back face">
-
-                <p>This is the project description</p></div>
-
-                 </div>
-
-            </div>
-
-            <div class="col-md-4">
-
-                <div class="shadow">
-
-                    <div class="front face">
-
-                <a href="#" class="thumbnail"><img src="http://www.siddhita.com/wp-content/uploads/2013/11/mobile_development.png"></a></div>
-
-<div class="back face">
-
-<p>This is the project description</p></div>
-
-</div>
-
-</div>
-
-            <div class="col-md-4">
-
-                 <div class="shadow">
-
-                    <div class="front face">
-
-                
-
-                <a href="#" class="thumbnail"><img src="http://www.blogcdn.com/www.engadget.com/media/2012/03/android-linux.jpg" style="height:215px"></a></div>
-
-               <div class="back face"><p>This is the project description</p></div>
-
+     
+<div class="container">
+    <div class="slide-wrapper">
+        <div class="slide active-slide">
+            <div class="container">
+                <div class="row">
+                    <div class="slide-copy col-xs-5">
+                        <h1>
+                            This is Qingfei Ma
+                        </h1>
+                        <p>Nice to meet u!</p>
+                        </div>
+                        <div class="slide-img col-xs-7">
+                            <img src="./images/newyork.JPG" style="width:350px; height:250px" class="img-circle">  
+                            </div>
                     </div>
-
-           </div>
-
+                </div>
+            </div>
+    
+          <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="slide-copy col-xs-5">
+                        <h1>
+                            Second layout
+                        </h1>
+                        <p>Not Bad</p>
+                        </div>
+                        <div class="slide-img col-xs-7">
+                            <img src="./images/bull.JPG" style="width:350px; height:250px" class="img-circle">  
+                            </div>
+                    </div>
+                </div>
+            </div>
+                 
+                 
+          <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="slide-copy col-xs-5">
+                        <h1>
+                            Third Slides
+                        </h1>
+                        <p>Layout using bootstrap, JQuery!</p>
+                        </div>
+                        <div class="slide-img col-xs-7">
+                            <img src="./images/pool.JPG" style="width:350px; height:250px" class="img-circle">  
+                            </div>
+                    </div>
+                </div>
+            </div>
+                      
+      </div>
+      
+              <div class="slider-nav">
+              <a href="#" class="arrow-prev"><img src="./images/iconL.png" style="width:16px; height:17px"></a>
+                   <ul class="slider-dots">
+                   <li class="dot active-dot">&bull;</li>
+                   <li class="dot">&bull;</li>
+                   <li class="dot">&bull;</li>
+                   </ul>
+              <a href="#" class="arrow-next"><img src="./images/iconR.png" style="width:16px; height:17px"></a>
+             </div>
+</div>
+<div id="dividingLine">
+<div class="row">
+      <div class="col-md-5">
+           <p>Personal Introduction<p>
+      </div>
+      <div class="col-md-7">
+           <p>coming soon</p>
+      </div>
+</div>
+<!--  project entries part-->
+<div class="entry">
+        <h2>Project entry</h2>
+        <p>I will upload more.....</p>
 </div>
 
-        
+<div class="project">
+     
+        <div class="row">            
+            <div class="col-md-4">                
+                    <div class="image">                   
+                <a href="#" class="thumbnail"><img src="http://www.myriadim.com/images/database-design.png">
+                     </a>
+                    </div>
+             </div>
+            <div class="col-md-4">               
+                    <div class="image">
+                <a href="#" class="thumbnail"><img src="http://www.siddhita.com/wp-content/uploads/2013/11/mobile_development.png"></a>
+                    </div>
+             </div>
+            <div class="col-md-4">
+                    <div class="image">               
+                <a href="#" class="thumbnail"><img src="http://www.blogcdn.com/www.engadget.com/media/2012/03/android-linux.jpg" style="height:215px"></a>
+                    </div>
+           </div>
+</div>
+</div>   
+<!-- project ends ; contact me part starts-->     
+<div class="contactme">
+    <h1>Send me a message!</h1>
+    <div class="post">
+      <div class="inner">
+          <form action="welcome.php" method="post">
+              <lable for="name">Name</label></br>    
+              <input type="text" name="name"></br>
+              <label for="mail">E-mail</label></br>
+              <input type="email" name="email"></br>
+              <label for="Message">Message</label></br>
+              <textarea name="Message"></textarea></br>
+              <button type="submit">send</button>
+       </div>    
+    </div>
+ </div>
+
+<div class="footer">
+<p>coming!</P>
+</div>
 
 <div>
 
-      <label>Name:</label>
-
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
-
-      <hr>
-
-      <h1>Hello {{yourName}}!</h1>
-
-</div>
-
-</div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-    <script src="./JS/app.js"></script>
-
- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.2/angular.min.js"></script>
-
-
 </body>
-
 </html>
