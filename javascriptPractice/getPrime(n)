@@ -1,3 +1,17 @@
 function getPrime(n){
-
+    t = 0;
+	res = 2;
+	while(true){
+		i = 2;
+		for(; i<res; i++)
+			if(res%i === 0)
+				break;
+		if(i === res)
+			t++;
+        
+		if(t === n)
+			break;
+        res += 1;
+	}
+	return res;
 }
