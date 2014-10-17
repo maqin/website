@@ -1,50 +1,100 @@
+#aboutme{
+	width: 100%;
+	height: 650px;
+}
 
 .icons{
     display:table;
     margin:0 auto;
 }
 
+#slides{
+	width: 100%;	
+}
 #horizontal-list{
-    Height:50px;
+    Height:45px;
     padding-top:5px;
-    background-color:#eee;
     list-of-tyle:none;
 }
 
 #horizontal-list li{
     display:inline;
 }
-.row{
-    height:500px;
+#secondSlide{
+	overflow:visible;
 }
-.slider{
+.fadein {
     position:relative;
-    padding:10px;
-}
-
-.slider p{
+    width:500px;
+    height:332px;
+    overflow:hidden;
+    }
+#div1{
+    height:300px;
+    width:500px;
+    left:-500px;
     position:absolute;
-    left:0;
-    top:0;
+}
+#div2{
+    height:300px;
+    width:500px;
+    left:0px;
+    position:absolute;
+}
+#div3{
+    height:300px;
+    width:500px;
+    left:500px;
+    position:absolute;
+}
+#partTwo{
+	width: 100%;
+	height: 600px;
+	background-color:#5bc0de ;
+	padding-top: 20px;
+}
+#menu-bar{
+	width:200px;
+	height:300px;
+	left: -150px;
+	position: absolute;
+}
+.rightContent{
+	padding-left: 40px;
+	height: 100%;
+	text-align: center;
+}
+.imgPlace{
+	width: 70%;
+	margin: 0 auto;
+}
+.menu-open{
+	height: 40px;
+	width: 40px;
+	right: 2px;
+	border-radius: 50%;
+	border: 1px solid #428bca;
+	position: absolute;
+	text-align: center;
 }
 
-.jumbotron{
-    padding-top:50px;
-    background-image:url('./image/pool.JPG');
-    Height:500px;
-    font-family:Helvetica;
-    background-size:cover;
-    background-position:center center;
-    background-repeat:no-repeat;
+.menu-open a:hover{
+	opacity: 0.5;
 }
-.jumbotron .container{
-    position:relative;
-    top:200px;
+.hidden-list{
+	border: 1px solid #428bca;
+	list-style-type: none;
+	width: 150px;
+	height: 100%;
 }
-
-.jumbotron p{
-    font-family: 'Shift', sans-serif;
-    font-weight: bold;
-    font-size:190px;
-    color:#fff;
+.hidden-list li{
+	padding: 5px;
+	
+}
+.hidesidebar ul a:hover{
+	opacity: 0.5;
+}
+.footer{
+    padding-top:20px;
+    height:100px;
 }
