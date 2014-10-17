@@ -7,17 +7,20 @@
         <link href="./css/style.css" rel="stylesheet">
         <link href="./css/nav.css" rel="stylesheet">
         <link href="./css/slides.css" rel="stylesheet">
-        <link href="./css/project.css" rel="stylesheet">
-        <link href="./css/contact.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'/>
+
         <link href="bootstrap.css" rel="stylesheet">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <!--
+        <link href="bootstrap_font_awesome.min.css" rel="stylesheet">
+        -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="shortcut icon" href="./images/myicon.ico">
-        
-        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="./JS/app.js"></script>
+               
     </head>
     
 <body>  
+<!--Introduce myself-->
+<div id="aboutme">
     <div class="navbar navbar-fixed-top">  
           <div class="navbar-inner">             
                       <div class="icons"> 
@@ -30,128 +33,120 @@
                        </div>        
           </div>
      </div>
-     
-<div class="container">
+<!--Slides show-->
+<div id="slides">
     <div class="slide-wrapper">
-        <div class="slide active-slide">
-            <div class="container">
-                <div class="row">
-                    <div class="slide-copy col-xs-5">
-                        <h1>
-                            This is Qingfei Ma
-                        </h1>
-                        <p>Nice to meet u!</p>
-                        </div>
-                        <div class="slide-img col-xs-7">
-                            <img src="./images/newyork.JPG" style="width:350px; height:250px" class="img-circle">  
-                            </div>
+        <div class="slide active-slide" id ="firstSlide">
+          <div class="container">
+              <div class="row">
+                  <div class="slide-copy col-xs-5">
+                     
+                      <h1 class="headtext">
+                          About me
+                      </h1>
+                      <!--Second Slides part-->
+                      <div class="fadein">
+                         
+                      <div class="intro1" id="div1">
+                       <h3>Who am I? </h3> 
+                      <p>Hi, this is Qingfei Ma.I graduated from <b>Northeastern University</b> in May 3, 2014.</p></br>
+                       <p>I am interested in <b>web, Java, Python.</b></p></br>
+                       <p>I have taken kinds of Computer Courses, such as, <b>Database, Web Development, Computer System, Algorithm....</b></p>
+                      </div>
+                      <div class="intro2" id="div2">
+                        <h3>What I am doing right now?</h3>
+                        <p>Right now, I am building up my website, github, and social networking! </p></br>
+                        <p>Hopefully, I can find a <b>Job</b> at the same time. 
+                      </div>
+                      <div class="intro3" id="div3">
+                         <h3>Where I came from?</h3>
+                         <p>I am a Chinese person.</p>
+                         <p>I studied in <b>Boston</b> from 2012 to 2014!!</p>
+                         <p>Now, I am living in CA. </p>
+                         
+                      </div>
                     </div>
-                </div>
-            </div>
-    
-          <div class="slide">
-            <div class="container">
-                <div class="row">
-                    <div class="slide-copy col-xs-5">
-                        <h1>
-                            Second layout
-                        </h1>
-                        <p>Not Bad</p>
-                        </div>
-                        <div class="slide-img col-xs-7">
-                            <img src="./images/bull.JPG" style="width:350px; height:250px" class="img-circle">  
-                            </div>
                     </div>
-                </div>
+                      <div class="slide-img col-xs-7">
+                          <img src="./images/bull.JPG" style="width:350px; height:250px" class="img-circle">  
+                          </div>
+                  </div>
+              </div>
+        </div>                        
+                
+                <div class="slide" id="secondSlide">
+                    <div class="container">
+                        <div class="row">
+                         <div class="slide-copy col-xs-5">
+                        <h1 class="headtext">
+                            Beautiful life
+                        </h1></div>
+
+                        <div class="slide-img col-xs-7">      
+                                 <img src="./images/newyork.JPG" style="width:400px; height:300px" class="img-circle">                                                                      
+                        </div>               
+                        </div>
+                    </div>                    
             </div>
                  
                  
-          <div class="slide">
+          <div class="slide" id="thirdSlide">
             <div class="container">
                 <div class="row">
                     <div class="slide-copy col-xs-5">
-                        <h1>
-                            Third Slides
+                        <h1 class="headtext">
+                            Sunny day!!
                         </h1>
-                        <p>Layout using bootstrap, JQuery!</p>
-                        </div>
+                       </div>
                         <div class="slide-img col-xs-7">
                             <img src="./images/pool.JPG" style="width:350px; height:250px" class="img-circle">  
                             </div>
                     </div>
                 </div>
             </div>
-                      
+           <!--This slide ends-->                     
       </div>
-      
+     <!--Slides wrapper ends-->
               <div class="slider-nav">
-              <a href="#" class="arrow-prev"><img src="./images/iconL.png" style="width:16px; height:17px"></a>
+              <a href="#" id="arrow-prev"><i class="fa fa-chevron-left"></i></a>
                    <ul class="slider-dots">
                    <li class="dot active-dot">&bull;</li>
                    <li class="dot">&bull;</li>
                    <li class="dot">&bull;</li>
                    </ul>
-              <a href="#" class="arrow-next"><img src="./images/iconR.png" style="width:16px; height:17px"></a>
+              <a href="#" id="arrow-next"><i class="fa fa-chevron-right"></i></a>
              </div>
-</div>
-<div id="dividingLine">
-<div class="row">
-      <div class="col-md-5">
-           <p>Personal Introduction<p>
-      </div>
-      <div class="col-md-7">
-           <p>coming soon</p>
+            </div>
       </div>
 </div>
-<!--  project entries part-->
-<div class="entry">
-        <h2>Project entry</h2>
-        <p>I will upload more.....</p>
-</div>
-
-<div class="project">
+<!--Experiment for hidden menu-->
+<div class="experiment" id="partTwo">	
+	  <div id="menu-bar">
+            <div class="menu-open">       
+	    <i class="fa fa-bars"></i></div>
+	    
+	    <ul class="hidden-list">
+	    	<li>
+	    	<a href="#">LAST PAGE</a></li>
+	    	<li>
+	    	<a href="#">BLOG</a></li>
+	    	<li>
+	    	<a href="#">CONTACT ME</a></li>
+	    	<li>
+	    	<a href="#">NEXT PAGE</a></li>
+	    </ul>
+            </div>
      
-        <div class="row">            
-            <div class="col-md-4">                
-                    <div class="image">                   
-                <a href="#" class="thumbnail"><img src="http://www.myriadim.com/images/database-design.png">
-                     </a>
-                    </div>
-             </div>
-            <div class="col-md-4">               
-                    <div class="image">
-                <a href="#" class="thumbnail"><img src="http://www.siddhita.com/wp-content/uploads/2013/11/mobile_development.png"></a>
-                    </div>
-             </div>
-            <div class="col-md-4">
-                    <div class="image">               
-                <a href="#" class="thumbnail"><img src="http://www.blogcdn.com/www.engadget.com/media/2012/03/android-linux.jpg" style="height:215px"></a>
-                    </div>
-           </div>
-</div>
-</div>   
-<!-- project ends ; contact me part starts-->     
-<div class="contactme">
-    <h1>Send me a message!</h1>
-    <div class="post">
-      <div class="inner">
-          <form action="welcome.php" method="post">
-              <lable for="name">Name</label></br>    
-              <input type="text" name="name"></br>
-              <label for="mail">E-mail</label></br>
-              <input type="email" name="email"></br>
-              <label for="Message">Message</label></br>
-              <textarea name="Message"></textarea></br>
-              <button type="submit">send</button>
-       </div>    
-    </div>
- </div>
-
-<div class="footer">
-<p>coming!</P>
+	        <div class="rightContent">    
+                    <div class="imgPlace">       
+	            <h1 class="headtext">
+	                Qingfei Ma
+	            </h1>
+	           <img src="./images/newyork.JPG" style="width:400px; height:300px" class="img-circle">     </div>                                                                   
+	    </div>               
 </div>
 
-<div>
-
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="./JS/app.js"></script>
 </body>
 </html>
